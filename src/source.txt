@@ -1,11 +1,11 @@
-Заметки Гали по Докеру: https://bony-tune-0ce.notion.site/08_Linux_Docker-33b10b0595ec469788b7d7ab2dd8ccd9
+Заметки по Докеру: https://bony-tune-0ce.notion.site/08_Linux_Docker-33b10b0595ec469788b7d7ab2dd8ccd9
 
-ssh swindell@localhost -p 2022 | ssh swindell@127.0.0.1 -p 2202 - подключение убунты к терминалу
-sudo mount -t vboxsf src /home/swindell/docker/ - подключение общей папки
+ssh name@localhost -p 2022 | ssh name@127.0.0.1 -p 2202 - подключение убунты к терминалу
+sudo mount -t vboxsf src /home/name/docker/ - подключение общей папки
 https://medium.com/macoclock/share-folder-between-macos-and-ubuntu-4ce84fb5c1ad
-https://bony-tune-0ce.notion.site/07_Linux_Monitoring-9c970e8114e34e9a95bfb888d5f3964d - записи Гали по мониторингу
-https://bony-tune-0ce.notion.site/06_Linux_Network-01aceaa5d6cf46c0aaf59ae2f29301a7 - записи Гали по нетворку
-https://miran.ru/nastrojka-ssh-dlya-ubuntu - когда какая-то параша с терминалом
+https://bony-tune-0ce.notion.site/07_Linux_Monitoring-9c970e8114e34e9a95bfb888d5f3964d - записи по мониторингу
+https://bony-tune-0ce.notion.site/06_Linux_Network-01aceaa5d6cf46c0aaf59ae2f29301a7 - записи по нетворку
+https://miran.ru/nastrojka-ssh-dlya-ubuntu - когда что-то не так с терминалом
 
 
 Про докер: 
