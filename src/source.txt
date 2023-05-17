@@ -1,0 +1,103 @@
+Заметки Гали по Докеру: https://bony-tune-0ce.notion.site/08_Linux_Docker-33b10b0595ec469788b7d7ab2dd8ccd9
+
+ssh swindell@localhost -p 2022 | ssh swindell@127.0.0.1 -p 2202 - подключение убунты к терминалу
+sudo mount -t vboxsf src /home/swindell/docker/ - подключение общей папки
+https://medium.com/macoclock/share-folder-between-macos-and-ubuntu-4ce84fb5c1ad
+https://bony-tune-0ce.notion.site/07_Linux_Monitoring-9c970e8114e34e9a95bfb888d5f3964d - записи Гали по мониторингу
+https://bony-tune-0ce.notion.site/06_Linux_Network-01aceaa5d6cf46c0aaf59ae2f29301a7 - записи Гали по нетворку
+https://miran.ru/nastrojka-ssh-dlya-ubuntu - когда какая-то параша с терминалом
+
+
+Про докер: 
+        + контейнер и докерфайл: https://wiki.merionet.ru/servernye-resheniya/99/docker-obraz-i-docker-kontejner-v-chem-raznica/
+        https://habr.com/ru/company/ruvds/blog/438796/
+        https://habr.com/ru/company/timeweb/blog/595687/ - разные команды с флагами!
+        https://fornex.com/ru/help/docker-ubuntu-18-04/ -  -//-
+        https://habr.com/ru/company/ruvds/blog/440660/
+
+https://nginx.org/ru/docs/beginners_guide.html#conf_structure - про nginx.conf
+
+
+1:
+    Команды докера:
+        https://unlix.ru/docker
+        https://anton-pribora.ru/articles/docker/programmers_path/   - здесь --publish = -p
+        https://nuancesprog.ru/p/7481/
+        https://medium.com/nuances-of-programming/%D0%BC%D0%BE%D1%89%D0%BD%D0%B5%D0%B9%D1%88%D0%B8%D0%B9-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-%D0%B2-docker-b2a22747de12
+    docker image:
+        https://docs.docker.com/engine/reference/commandline/image_inspect/
+
+
+
+2:
+    https://www.andreyolegovich.ru/dvps/docker/exec.php
+    https://www.mousedc.ru/learning/565-komanda-docker-konteyner/
+    2.4. docker cp:
+        https://andreyex.ru/linux/kak-skopirovat-fajly-mezhdu-hostom-i-docker-kontejnerom/
+        https://webhamster.ru/mytetrashare/index/mtb339/1529834188zr8vi09o73
+    2.5. перезапуск nginx
+        https://itisgood.ru/2018/10/23/linux-kak-perezapustit-nginx-na-ubuntu-centos-docker/
+    2.9. rmi
+        https://900913.ru/tldr/common/en/docker-rmi/
+        https://docs.docker.com/engine/reference/commandline/rmi/
+        (rm:)https://timeweb.cloud/tutorials/docker/udalenie-obrazov-kontejnerov-tomov-i-seti-docker - здесь есть и другие команды
+    2.10.rm:
+        https://docs.docker.com/engine/reference/commandline/rm/
+        http://fkn.ktu10.com/?q=node/11418 - docker ps -a
+
+
+
+3:  FastCGI:
+        https://habr.com/ru/post/154187/
+        https://fastcgi-archives.github.io/FastCGI_Developers_Kit_FastCGI.html#S3.1 - про библиотеку fastCGI на си
+        https://habr.com/ru/post/61532/
+    Про html:
+        https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/Content-Type
+        https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_MIME-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2
+    Про nginx(listen, location):
+        https://nginx.org/ru/docs/http/ngx_http_core_module.html#location
+    Вход в докер: 
+        https://docs.docker.com/engine/reference/commandline/exec/
+    Запуск сервера:
+        https://vds-admin.ru/unix-commands/spawn-fcgi
+    Перезапуск контейнера:
+        https://alexandrnikolaev.ru/blog/perezapusk-nginx-vnutri-kontejnera-docker/
+
+
+
+4:
+    Синтаксис Dockerfile и docker build:
+        https://habr.com/ru/company/ruvds/blog/439980/
+        https://learn.microsoft.com/ru-ru/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile
+        https://900913.ru/tldr/common/en/docker-build/
+        https://doka.guide/tools/dockerfile/
+        https://1cloud.ru/help/docker/dockerfile_work
+    chmod:
+        https://andreyex.ru/linux/chto-oznachaet-chmod-777/
+    docker run:
+        https://ealebed.github.io/posts/2018/docker-%D1%81%D0%BE%D0%B2%D0%B5%D1%82-38-%D1%82%D0%BE%D0%BF-10-%D0%BE%D0%BF%D1%86%D0%B8%D0%B9-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-docker-run/
+
+
+
+5:
+    Dockle:
+        https://habr.com/ru/company/timeweb/blog/561378/
+    HEALTHCHECK:
+        https://www.atatus.com/blog/health-check-command-in-docker/
+        https://riptutorial.com/docker/example/11015/healthcheck--instruction
+        https://scoutapm.com/blog/how-to-use-docker-healthcheck
+    Права доступа:
+        https://androidp1.ru/kak-polzovatsja-komandami-chown-i-chmod-v-linux/
+        https://habr.com/ru/post/469667/
+        http://www.rhd.ru/docs/manuals/enterprise/RHEL-AS-2.1-Manual/getting-started-guide/s1-navigating-chmodnum.html
+        https://ru.wikipedia.org/wiki/Chown
+
+6:
+    docker-compose.yml:
+        https://habr.com/ru/company/ruvds/blog/450312/
+        https://ru.hexlet.io/courses/docker-basics/lessons/docker-compose/theory_unit
+        https://1cloud.ru/blog/docker-compose
+        
+
+
+
